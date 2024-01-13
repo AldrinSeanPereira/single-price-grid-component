@@ -1,6 +1,7 @@
 # Frontend Mentor - Single price grid component solution
 
-This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc).  
+Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -32,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [to be added later](https://your-solution-url.com)
-- Live Site URL: [to be added later](https://your-live-site-url.com)
+- Solution URL: [link](https://github.com/AldrinSeanPereira/single-price-grid-component)
+- Live Site URL: [link](https://heartfelt-bavarois-10d8d2.netlify.app/)
 
 ## My process
 
