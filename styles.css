@@ -1,0 +1,236 @@
+:root {
+    /* Primary */
+    --primary-color-cyan: hsl(179, 62%, 43%);
+    --primary-color-bright-yellow: hsl(71, 73%, 54%);
+    /* Neutral */
+    --neutral-color-light-gray: hsl(204, 43%, 93%);
+    --neutral-color-grayish-blue: hsl(218, 22%, 67%);
+    --neutral-color-white: white;
+    /* sign up box shadow */
+    --color-box-shadow: rgba(0, 0, 0, 0.128);
+    --color-why-us-list-items: rgba(255, 255, 255, 0.567);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+html {
+    font-size: 10px;
+}
+
+body,
+main,
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+    /*font weights: 400, 700*/
+    font-size: 1.6rem;
+    background-color: var(--neutral-color-light-gray);
+    padding: 8rem 0;
+    position: relative;
+}
+
+main {
+    width: 85%;
+}
+
+.shadow {
+    box-shadow: 0 10px 10px var(--color-box-shadow);
+}
+
+.card {
+    background-color: var(--neutral-color-light-gray);
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card h3 {
+    margin-bottom: 2rem;
+    color: var(--neutral-color-white);
+}
+
+.card > * {
+    width: 100%;
+}
+
+/*-----------------------card 1--------------------------*/
+.card-one {
+    border-radius: 8px 8px 0 0;
+    background-color: var(--neutral-color-white);
+}
+
+.card-one h3 {
+    color: var(--primary-color-cyan);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.card-one h4 {
+    color: var(--primary-color-bright-yellow);
+    margin-bottom: 2rem;
+}
+
+.card-one p {
+    color: var(--neutral-color-grayish-blue);
+    line-height: 2;
+}
+
+/*---------------------------------------------------------------------*/
+/*-----------------section(cards 2+3)----------------------- */
+section {
+    width: 100%;
+}
+
+/*-----------------------card 2--------------------------*/
+.card-two {
+    background-color: var(--primary-color-cyan);
+    color: var(--neutral-color-light-gray);
+}
+
+.card-two .price-per-month {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.card-two .price-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--neutral-color-white);
+    margin-right: 1rem;
+}
+
+.card-two .per-month-text {
+    color: rgba(255, 255, 255, 0.486);
+}
+
+.card-two p {
+    margin-bottom: 4rem;
+}
+
+.card-two button {
+    margin: auto;
+    width: 100%;
+    background-color: var(--primary-color-bright-yellow);
+    color: var(--neutral-color-light-gray);
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/*-----------------------card 3--------------------------*/
+.card-three {
+    background-color: rgba(35, 183, 183, 0.831);
+    color: var(--neutral-color-light-gray);
+    border-radius: 0 0 8px 8px;
+}
+
+.card-three ul {
+    list-style-type: none;
+    color: var(--color-why-us-list-items);
+}
+
+.card-three ul li {
+    margin-bottom: 0.5rem;
+}
+/*---------------------------------------------------------------------*/
+/*-----------------------footer--------------------------*/
+footer {
+    position: absolute;
+    bottom: 5px;
+}
+
+footer .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+/*---------------------------------------------------------------------*/
+/*--------------------media queries----------------------*/
+@media (min-width: 502px) {
+    html {
+        font-size: 8px;
+    }
+
+    main {
+        width: 44%;
+    }
+
+    .card {
+        padding: 4.2rem;
+    }
+
+    .card h3 {
+        margin-bottom: 2rem;
+    }
+
+    .card-one h3 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .card-one h4 {
+        font-size: 1.9rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .card-one p {
+        font-size: 1.7rem;
+        line-height: 1.5;
+    }
+
+    section {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .card-two {
+        border-radius: 0 0 0 8px;
+        width: 50%;
+    }
+
+    .card-two .price-text {
+        font-size: 3.2rem;
+        margin-right: 1.5rem;
+    }
+
+    .card-two p {
+        margin-bottom: 2.5rem;
+    }
+
+    .card-two button {
+        transition: transform 0.5s;
+    }
+
+    .card-two button:hover {
+        transform: scale(1.1);
+    }
+
+    .card-three {
+        border-radius: 0 0 8px 0;
+        width: 50%;
+    }
+
+    .card-three ul li {
+        font-size: 1.5rem;
+    }
+}
